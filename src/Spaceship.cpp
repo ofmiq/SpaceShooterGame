@@ -115,7 +115,7 @@ void Background::draw(sf::RenderWindow& window) {
 }
 
 Game::Game()
-    : window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SFML Shooter"),
+    : window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Space Shooter"),
       scene(SCENE_TITLE),
       background(),
       score(0),
@@ -213,7 +213,7 @@ void Game::render() {
   background.draw(window);
   switch (scene) {
     case SCENE_TITLE:
-      text.setString("  SFML Shooter\n- PRESS ENTER -");
+      text.setString("  Space Shooter\n- PRESS ENTER -");
       text.setPosition(WINDOW_WIDTH / 2 - 100, 70);
       window.draw(text);
       break;
